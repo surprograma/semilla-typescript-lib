@@ -1,3 +1,5 @@
+import { any } from "ramda";
+
 abstract class Vendedor {
   abstract puedeTrabajarEn(ciudad: Ciudad): boolean;
 }
@@ -18,7 +20,7 @@ export class Viajante extends Vendedor {
   }
 
   puedeTrabajarEn(ciudad: Ciudad): boolean {
-    return this.provinciasDondeTrabaja.some((p) => p == ciudad.provincia);
+    return any((p) => p == ciudad.provincia, this.provinciasDondeTrabaja);
   }
 }
 
