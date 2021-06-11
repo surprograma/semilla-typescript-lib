@@ -1,0 +1,19 @@
+{
+  "name": "vendedores",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Federico Aloi",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "@types/source-map-support": "^0.5.3",
+    "jest": "^27.0.4",
+    "source-map-support": "^0.5.19",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
+  }
+}
