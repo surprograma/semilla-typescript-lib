@@ -1,38 +1,37 @@
 abstract class Vendedor {
-  abstract puedeTrabajarEn(ciudad: Ciudad): boolean
+  abstract puedeTrabajarEn(ciudad: Ciudad): boolean;
 }
 
 export class VendedorFijo extends Vendedor {
   ciudadOrigen: Ciudad;
 
   constructor(init?: Partial<VendedorFijo>) {
-    super()
+    super();
     Object.assign(this, init);
   }
 
   puedeTrabajarEn(ciudad: Ciudad) {
-    return ciudad == this.ciudadOrigen
+    return ciudad == this.ciudadOrigen;
   }
 }
 
 export class Viajante extends Vendedor {
-  provinciasDondeTrabaja: Provincia[]
+  provinciasDondeTrabaja: Provincia[];
 
   constructor(init?: Partial<Viajante>) {
-    super()
+    super();
     Object.assign(this, init);
   }
 
   puedeTrabajarEn(ciudad: Ciudad) {
-    return this.provinciasDondeTrabaja.some(p => p == ciudad.provincia)
+    return this.provinciasDondeTrabaja.some((p) => p == ciudad.provincia);
   }
 }
 
-export class Provincia {
-}
+export class Provincia {}
 
 export class Ciudad {
-  provincia: Provincia
+  provincia: Provincia;
 
   constructor(init?: Partial<Ciudad>) {
     Object.assign(this, init);
