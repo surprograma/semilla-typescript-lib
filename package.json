@@ -6,7 +6,8 @@
   "scripts": {
     "test": "run-s lint jest",
     "lint": "eslint --cache .",
-    "jest": "jest"
+    "jest": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "dependencies": {
