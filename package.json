@@ -1,14 +1,14 @@
 {
-  "name": "vendedores",
+  "name": "semilla-typescript-lib",
   "version": "1.0.0",
+  "author": "Federico Aloi",
+  "license": "MIT",
   "scripts": {
     "test": "run-s lint jest",
     "lint": "eslint --cache .",
     "jest": "jest"
   },
   "keywords": [],
-  "author": "Federico Aloi",
-  "license": "MIT",
   "dependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.2",
